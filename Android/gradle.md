@@ -28,9 +28,13 @@ build type配置的是debug和release包。product flavor是用来打多渠道�
 
     
     
-    
 6. gradle的配置文件
 
 从project statuct 中进行选择填写即可
+
+7. BuildConfig类
+
+ Android 项目中有一个 BuildConfig 默认生成了gradle 中定义的变量buildConfigField "boolean", "LOG_DEBUG", "true"
+可以通过该值控制测试地址和线上地址的修改，也可以控制日志的打印。
 
 
