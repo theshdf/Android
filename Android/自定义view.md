@@ -10,7 +10,7 @@
 
 绘制：重写draw（）进行绘制，通过画笔（Paint）在画布（Canvas）上绘制。
 
-#### 自定义view中wrapcontent不起作用。
+#### [自定义view中wrapcontent不起作用。](https://blog.csdn.net/carson_ho/article/details/62037760)
 
 #### 实现一个并列柱状图
 
