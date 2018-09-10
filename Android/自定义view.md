@@ -12,6 +12,10 @@
 
 #### [自定义view中wrapcontent不起作用。](https://blog.csdn.net/carson_ho/article/details/62037760)
 
+#### 自定义view继承viewgroup
+
+学习目标：自定义relativelayout实现通用的titlebar
+
 #### 实现一个并列柱状图
 
 1. 两根柱子在同一坐标系中，x轴和y轴的最大值和最小值相同
