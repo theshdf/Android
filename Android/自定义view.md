@@ -1,4 +1,10 @@
 #### 基础知识
+#### 理解：
+
+
+view在绘制的过程中，是从最外层开始绘制的，先绘制父布局，再绘制子view，在绘制父布局的时候会给出子view绘制的宽高的大小的建议，并确定子view的绘制位置，然后在绘制子view的时候，子view会根据父布局给出的建议，最终计算出自己的宽高，然后通过onsizechanged方法确定宽高
+
+
 #### 坐标系
 
 在自定义view中共有两个坐标系：
@@ -8,6 +14,15 @@
 
 #### 宽高
 屏幕坐标系有两种，那么每次点击的位置的横纵坐标也有两个，一个是在屏幕坐标系的位置，一个是在父控件当中的位置
+
+#### 获取屏幕宽高：
+
+1. 
+> DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+> width = displayMetrics.widthPixels;
+> height = displayMetrics.heightPixels;
+
+2. onDraw()中getWidth(),getHeight也可以获取
 
 构造方法：四个
 
