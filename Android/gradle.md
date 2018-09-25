@@ -37,4 +37,23 @@ build type配置的是debug和release包。product flavor是用来打多渠道�
  Android 项目中有一个 BuildConfig 默认生成了gradle 中定义的变量buildConfigField "boolean", "LOG_DEBUG", "true"
 可以通过该值控制测试地址和线上地址的修改，也可以控制日志的打印。
 
+8. Gradle中对于常量的统一管理
+>有三种方式，个人喜欢的方式。在根目录的build.gradle中，使用ext{},并使用var对于声明的变量管理
+ext {   
+     var = [           
+        // SDK And Tools            
+        minSdkVersion        : 14,  
+        targetSdkVersion     : 25,            
+        compileSdkVersion    : 25,           
+        buildToolsVersion    : "25.0.2",            
+        versionName          : "1.0.0",            
+        //Dependencies            
+        supportLibraryVersion: "25.2.0"    
+        ]
+        }
+
+---------------------
+
+本文来自 gao_chun 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/gao_chun/article/details/58105089?utm_source=copy 
+
 
