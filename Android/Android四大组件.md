@@ -34,10 +34,22 @@
   #### 横竖屏切换顺便切换布局
 
   在res下面定义layout-land 和layout-port。在屏幕切换时会自动加载对应的布局。
-  
-* 启动模式
+
+* #### 启动模式
+  1. standar
+   >每次启动一个activity，都会创建一个新的并放在栈顶
+  2. singletop
+   >判断启动的activity是不是在栈顶，如果是，则不会创建新的activity，并调用onnewintent(),如果不是则会创建一个新的activity
+  3. singletask
+  4. singleinstance
 
 #### Fragment
 1. 数据懒加载
 
 #### Service
+
+1. 施工计划编制添加全部筛选
+2. 施工计划编制、执行、查询 修改开始结束时间为选择，默认筛选所有时间段
+3. 修改所有界面的返回按钮logo和统一了时间格式
+4. 综合计划批次中修改选择工程弹框
+5. 人工档案管理中添加删除弹框
